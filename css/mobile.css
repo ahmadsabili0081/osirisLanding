@@ -1,0 +1,604 @@
+@media screen and (max-width: 1024px) {
+  body .container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  body .container header {
+    width: 100%;
+  }
+  body .container header .container__header {
+    width: 100%;
+  }
+  body .container section.banner__osiris {
+    width: 100%;
+    min-height: 100%;
+  }
+  body .container section.banner__osiris .container__banner__osiris {
+    width: 100%;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__counter {
+    bottom: 20px;
+  }
+  body .container section.about__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.about__osiris .container__about__osiris {
+    width: 100%;
+  }
+  body .container section.hero__about__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.hero__about__osiris .container__hero__about__osiris {
+    width: 100%;
+  }
+  body .container section.blog__news__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris {
+    width: 100%;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris .box__blog__news__osiris {
+    width: 450px;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris .box__blog__news__osiris span {
+    line-height: 1.5;
+    text-align: justify;
+    display: inline-block;
+  }
+  body .container section.contact__osiris {
+    padding: 50px 10px;
+  }
+  body .container section.contact__osiris .container__contact__osiris {
+    width: 100%;
+  }
+  body .container section.contact__osiris .container__contact__osiris .row__contact__osiris .box__contact__osiris span {
+    line-height: 1.5;
+  }
+  body .container section.getstarted__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.getstarted__osiris .container__getstarted__osiris {
+    width: 100%;
+  }
+  body .container section.getstarted__osiris .container__getstarted__osiris .row__getstarted__osiris .box__getstarted__osiris {
+    z-index: 50;
+  }
+  body .container footer {
+    padding: 50px 10px;
+  }
+  body .container footer .container__footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  body .container header {
+    width: 100%;
+  }
+  body .container header .container__header {
+    width: 100%;
+  }
+  body .container header .container__header .hamburger {
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 350;
+  }
+  body .container header .container__header .hamburger span.bar {
+    width: 100%;
+    height: 3px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 5px;
+    background-color: #000;
+  }
+  body .container header .container__header .hamburger.rotate span.bar:first-child {
+    -webkit-transform: rotate(45deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(7px, 7px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .container header .container__header .hamburger.rotate span.bar:nth-child(2) {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .container header .container__header .hamburger.rotate span.bar:last-child {
+    -webkit-transform: rotate(-45deg) translate(5px, -5px);
+            transform: rotate(-45deg) translate(5px, -5px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .container header .container__header nav.osiris {
+    width: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    min-height: 80vh;
+    background-color: #F6F8FD;
+    z-index: 300;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-x: hidden;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .container header .container__header nav.osiris ul.list__osiris {
+    margin-top: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container header .container__header nav.osiris ul.list__osiris li.list__item__osiris {
+    padding: 10px 0px;
+    margin: 10px 0px;
+  }
+  body .container header .container__header nav.osiris .btn__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  body .container header .container__header nav.osiris .btn__header button.btn__header {
+    width: 200px;
+    margin: 20px 0px;
+  }
+  body .container header .container__header nav.osiris.showNav {
+    width: 100%;
+    right: 0;
+  }
+  body .container section.banner__osiris {
+    width: 100%;
+    min-height: 100%;
+  }
+  body .container section.banner__osiris .container__banner__osiris {
+    width: 100%;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__text {
+    padding: 0px 10px;
+    margin-top: -5em;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__text h1 {
+    font-size: 30px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__text span {
+    margin: 1.5em 0px;
+    line-height: 1.5;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__images {
+    width: 700px;
+    padding: 0px 10px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__images img {
+    margin-top: 50px;
+    width: 100%;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .btn__banner.edit {
+    width: 100%;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .btn__banner.edit button.btn__banner {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__counter {
+    width: 400px;
+    bottom: 20px;
+  }
+  body .container section.about__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.about__osiris .container__about__osiris {
+    width: 100%;
+  }
+  body .container section.about__osiris .container__about__osiris .row__about__osiris .box__image__about__osiris {
+    width: 350px;
+  }
+  body .container section.about__osiris .container__about__osiris .row__about__osiris .box__about_text {
+    width: 350px;
+  }
+  body .container section.about__osiris .container__about__osiris .row__about__osiris .box__about_text h1::before {
+    margin-left: 120px;
+  }
+  body .container section.hero__about__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.hero__about__osiris .container__hero__about__osiris {
+    width: 100%;
+  }
+  body .container section.hero__about__osiris .container__hero__about__osiris .row__hero__about__osiris .box__hero__about__osiris {
+    margin: 0px 10px;
+    height: 300px;
+  }
+  body .container section.blog__news__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris {
+    width: 100%;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris h1 {
+    font-size: 30px;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris .box__blog__news__osiris {
+    margin: 0px 10px;
+    width: 400px;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris .box__blog__news__osiris__articel {
+    margin-top: 7%;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris .box__blog__news__osiris__articel .box__articel .box__text__articel {
+    width: 70%;
+  }
+  body .container section.contact__osiris {
+    padding: 50px 10px;
+  }
+  body .container section.contact__osiris .container__contact__osiris {
+    width: 100%;
+  }
+  body .container section.contact__osiris .container__contact__osiris .row__contact__osiris .box__contact__osiris span {
+    line-height: 1.5;
+  }
+  body .container section.getstarted__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.getstarted__osiris .container__getstarted__osiris {
+    width: 100%;
+  }
+  body .container section.getstarted__osiris .container__getstarted__osiris .row__getstarted__osiris .box__getstarted__osiris {
+    z-index: 50;
+  }
+  body .container footer {
+    padding: 50px 10px;
+  }
+  body .container footer .container__footer {
+    width: 100%;
+  }
+  body .container footer .container__footer .row__footer .box__footer {
+    width: 200px;
+    margin: 0px auto;
+  }
+  body .container footer .container__footer .row__footer .box__footer img {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  body .container {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  body .container header {
+    width: 100%;
+    padding: 3% 1%;
+  }
+  body .container header .container__header .logo {
+    position: relative;
+    z-index: 350;
+  }
+  body .container header .container__header .logo img {
+    width: 100px;
+  }
+  body .container header .container__header .hamburger {
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 350;
+  }
+  body .container header .container__header .hamburger span.bar {
+    width: 100%;
+    height: 3px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 5px;
+    background-color: #000;
+  }
+  body .container header .container__header .hamburger.rotate span.bar:first-child {
+    -webkit-transform: rotate(45deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(7px, 7px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .container header .container__header .hamburger.rotate span.bar:nth-child(2) {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .container header .container__header .hamburger.rotate span.bar:last-child {
+    -webkit-transform: rotate(-45deg) translate(5px, -5px);
+            transform: rotate(-45deg) translate(5px, -5px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .container header .container__header nav.osiris {
+    width: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    min-height: 80vh;
+    background-color: #F6F8FD;
+    z-index: 300;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-x: hidden;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .container header .container__header nav.osiris ul.list__osiris {
+    margin-top: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container header .container__header nav.osiris ul.list__osiris li.list__item__osiris {
+    padding: 10px 0px;
+    margin: 10px 0px;
+  }
+  body .container header .container__header nav.osiris .btn__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  body .container header .container__header nav.osiris .btn__header button.btn__header {
+    width: 200px;
+    margin: 20px 0px;
+  }
+  body .container header .container__header nav.osiris.showNav {
+    width: 100%;
+    right: 0;
+  }
+  body .container header.Sticky .container__header .logo img {
+    margin: 5px;
+  }
+  body .container section.banner__osiris {
+    width: 100%;
+  }
+  body .container section.banner__osiris .container__banner__osiris {
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 50px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background: unset;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__text {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__text h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__text span {
+    text-align: center;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__images {
+    width: 100%;
+    border-radius: 0px;
+    background-size: cover;
+    margin-bottom: 30px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__banner__osiris__images img {
+    margin-top: -50px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .btn__banner {
+    width: 100%;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .btn__banner button.btn__banner {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__counter {
+    width: 100%;
+    left: 0;
+    bottom: -80px;
+    padding: 0px 10px;
+  }
+  body .container section.banner__osiris .container__banner__osiris .box__banner__osiris .box__counter .counter {
+    text-align: center;
+  }
+  body .container section.about__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.about__osiris .container__about__osiris {
+    width: 100%;
+  }
+  body .container section.about__osiris .container__about__osiris .row__about__osiris {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body .container section.about__osiris .container__about__osiris .row__about__osiris .box__image__about__osiris {
+    width: 100%;
+    margin-top: 10%;
+  }
+  body .container section.about__osiris .container__about__osiris .row__about__osiris .box__about_text {
+    width: 100%;
+    text-align: center;
+  }
+  body .container section.about__osiris .container__about__osiris .row__about__osiris .box__about_text .about__text__img {
+    text-align: center;
+  }
+  body .container section.about__osiris .container__about__osiris .row__about__osiris .box__about_text .about__text__img img {
+    width: 50px;
+  }
+  body .container section.hero__about__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.hero__about__osiris .container__hero__about__osiris {
+    width: 100%;
+  }
+  body .container section.hero__about__osiris .container__hero__about__osiris .row__hero__about__osiris {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container section.hero__about__osiris .container__hero__about__osiris .row__hero__about__osiris .box__hero__about__osiris {
+    width: 90%;
+    margin-top: 8%;
+  }
+  body .container section.blog__news__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris {
+    width: 100%;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris .box__blog__news__osiris {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris .box__blog__news__osiris h1 {
+    font-size: 30px;
+  }
+  body .container section.blog__news__osiris .container__blog__news__osiris .row__blog__news__osiris .box__blog__news__osiris__articel {
+    width: 100%;
+  }
+  body .container section.contact__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.contact__osiris .container__contact__osiris {
+    width: 100%;
+  }
+  body .container section.contact__osiris .container__contact__osiris .row__contact__osiris {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container section.contact__osiris .container__contact__osiris .row__contact__osiris .box__contact__osiris {
+    width: 100%;
+    text-align: center;
+  }
+  body .container section.contact__osiris .container__contact__osiris .row__contact__osiris .box__contact__img {
+    margin-top: 20%;
+    width: 100%;
+  }
+  body .container section.getstarted__osiris {
+    padding: 100px 10px;
+  }
+  body .container section.getstarted__osiris .container__getstarted__osiris {
+    width: 100%;
+  }
+  body .container section.getstarted__osiris .container__getstarted__osiris .row__getstarted__osiris .box__getstarted__osiris {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+  }
+  body .container section.getstarted__osiris .container__getstarted__osiris .row__getstarted__osiris .box__svg__getstaretd {
+    right: -20px;
+  }
+  body footer {
+    padding: 50px 10px;
+  }
+  body footer .container__footer {
+    width: 100%;
+  }
+  body footer .container__footer .row__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body footer .container__footer .row__footer .box__footer {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  body footer .container__footer .row__footer .box__list__footer {
+    margin-top: 10%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

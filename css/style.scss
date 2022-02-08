@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+$fontFamily: 'Poppins', sans-serif;
+:root{
+    --text-nav : #34364A;
+    --body : #E5E5E5;
+    --btn-color :#EDF1FA;
+    --btn-color-banner : #335EF7;
+    --hero-about-osiris: #F6F8FD;
+    --hero--about-heading : #22C59A;
+}
+body{
+    .container{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        .btn{
+            position: fixed;
+            bottom: 20px;
+            right: -50%;
+            z-index: 200;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: var(--text-nav);
+            transition: 0.5s;
+            i{
+                color: var(--btn-color);
+            }
+        }
+        header{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            padding: 1%;
+            z-index: 100;
+            transition: 0.5s ease-in;
+            .container__header{
+                max-width: 1200px;
+                margin: 0px auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .logo{
+                    img{
+                        width: 100px;
+                    }
+                }
+                nav.osiris{
+                    width: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    ul.list__osiris{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        list-style-type: none;
+                        li.list__item__osiris{
+                            padding: 5px 10px;
+                            margin: 5px;
+                            a.list__item__link__osiris{
+                                font-family: $fontFamily;
+                                text-decoration: none;
+                                color: var(--text-nav);
+                            }
+                        }
+                        li.list__item__osiris.active{
+                            a.list__item__link__osiris{
+                                color: #5D5D64;
+                            }
+                        }
+                    }
+                    .btn__header{
+                        .input__group{
+                            background-color: var(--btn-color);
+                            width:50px;
+                            height: 40px;
+                            vertical-align: middle;
+                            position: relative;
+                            margin: 0px 20px;
+                            padding: 3px;
+                            text-align: center;
+                            overflow: hidden;
+                            border-radius: 50px;
+                            transition: 0.5s;
+                            display: inline-block;
+                            input[type="text"]{
+                                width: 0%;
+                                display: inline-block;
+                                padding: 10px;
+                                position: absolute;
+                                outline: none;
+                                top: 0;
+                                left: 0;
+                                font-family: $fontFamily;
+                                border: none;
+                                font-size: 15px;
+                                margin: 0px 10px;
+                                background-color: var(--btn-color);
+                                border-radius: 50px;
+                                transition: 0.5s;
+                            }
+                            .search{
+                                display: inline-block;
+                                margin: 0px 10px;
+                                position: absolute;
+                                right: 5px;
+                                top: 0;
+                                cursor: pointer;
+                                i{
+                                    display: inline-block;
+                                    margin-top: 10px;
+                                    font-size: 20px;
+                                    color: var(--text-nav);
+                                }
+                            }
+            
+                        }
+                        .input__group.inputWidth{
+                            width: 300px;
+                            height: 40px;
+                            transition: 0.5s;
+                            input[type="text"]{
+                                width: 85%;
+                                transition: 0.5s;
+                                display: inline-block;
+                            }
+                            .search{
+                                display: inline-block;
+                            }
+                        }
+                        button.btn__header{
+                            display: inline-block;
+                            padding: 10px 50px;
+                            font-family: $fontFamily;
+                            outline: none;
+                            border: none;
+                            background-color: var(--btn-color) ;
+                            color: var(--text-nav);
+                            border-radius: 30px;
+                            font-weight: 500;
+                            letter-spacing: 1.3px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        header.Sticky{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            animation: floatDown 1.5s ease-in;
+            background-color: var(--hero-about-osiris);
+            padding: 1% 0%;
+        }
+        section.banner__osiris{
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            .container__banner__osiris{
+                max-width: 1200px;
+                margin: 0px auto;
+                padding: 130px 0px;
+                .box__banner__osiris{
+                    width: 100%;
+                    height: 500px;
+                    background-color: var(--body);
+                    background: url('../images/bg__banner.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    align-items: center;
+                    .box__banner__osiris__text{
+                        width: 500px;
+                        font-family: $fontFamily;
+                        padding: 20px;
+                        h1{
+                            font-size: 35px;
+                        }
+                        span{
+                            display: block;
+                            margin: 10px 0px;
+                            line-height: 1.5;
+                        }
+                        .btn__banner{
+                            button.btn__banner{
+                                display: inline-block;
+                                padding: 10px 30px;
+                                font-family: $fontFamily;
+                                margin-right: 20px;
+                                cursor: pointer;
+                                border: none;
+                                outline: none;
+                                background-color: var(--btn-color-banner);
+                                color: #fff;
+                            }
+                            button.grey{
+                                background-color: #E5E9F2;
+                                color: #34364A;
+                            }
+                        }
+                    }
+                    .box__banner__osiris__images{
+                        width: 700px;
+                        height: 400px;
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    .box__counter{
+                        width: 450px;
+                        position: absolute;
+                        left:20px;
+                        bottom: -20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .counter{
+                            span{
+                                font-size: 25px;
+                                font-family: $fontFamily;
+                                font-weight: 800;
+                            }
+                           span.plus::after{
+                               content: '+';
+                               display: inline-block;
+                           }
+                           p{
+                               font-family: $fontFamily;
+                               font-size: 15px;
+                               color: #5D5D64;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+        section.about__osiris{
+            padding: 100px 0px;
+            position: relative;
+            .container__about__osiris{
+                max-width: 1200px;
+                margin: 0px auto;
+                .row__about__osiris{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .box__image__about__osiris{
+                        width: 400px;
+                        height: auto;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                        .box__about__img__2{
+                            width: 190px;
+                            position: absolute;
+                            top: -30px;
+                            right: -10px;
+                            img{
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                        .box__about__img__3{
+                            width: 140px;
+                            position: absolute;
+                            bottom: -50px;
+                            left: 30px;
+                            img{
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .box__about_text{
+                        width: 500px;
+                        font-family: $fontFamily;
+                        h1{
+                            font-size: 35px;
+                            display: block;
+                            position: relative;
+                        }
+                        h1::before{
+                            content: ' ';
+                            display: block;
+                            width: 100px;
+                            height: 30px;
+                            background: url('../images/lineBlue.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        span{
+                            display: block;
+                            margin: 20px 0px;
+                            line-height: 1.5;
+                        }
+                        .about__text__img{
+                            margin-top: 20px;
+                            img{
+                                display: inline-block;
+                                width: 70px;
+                                margin-right: 15px;
+                            }
+                        }
+                        button.about__text{
+                            display: inline-block;
+                            padding: 10px 30px;
+                            margin: 50px 0px;
+                            outline: none;
+                            border: none;
+                            font-family: $fontFamily;
+                            cursor: pointer;
+                            background-color: #335EF7;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        section.hero__about__osiris{
+            padding: 100px 0px;
+            position: relative;
+            background: url('../images/hero__about__osiris.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            .container__hero__about__osiris{
+                max-width: 1200px;
+                margin: 0px auto;
+                text-align: center;
+                font-family: $fontFamily;
+                h3{
+                    color: var(--hero--about-heading);
+                }
+                h1{
+                    color: var(--text-nav);
+                    font-size: 35px;
+                    margin: 10px 0px;
+                }
+                p{
+                    color: #5D5D64;
+                }
+            }
+            .row__hero__about__osiris{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5%;
+                .box__hero__about__osiris{
+                    width: 300px;
+                    height: auto ;
+                    padding: 40px 20px;
+                    background-color: #fff;
+                    text-align: left;
+                    border-radius: 30px;
+                    h3{
+                        color: var(--hero--about-heading);
+                        margin: 20px 0px;
+                    }
+                    img{
+                        display: block;
+                        width: 80px;
+                    }
+                    span{
+                        line-height: 1.5;
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        section.blog__news__osiris{
+            padding: 100px 0px;
+            position: relative;
+            .container__blog__news__osiris{
+                max-width: 1200px;
+                margin: 0px auto;
+                .row__blog__news__osiris{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    .box__blog__news__osiris{
+                        width: 500px;
+                        font-family: $fontFamily;
+                        img{
+                            width: 100%;
+                            display: block;
+                            margin-top: 5%;
+                        }
+                        h1{
+                            color: var(--text-nav);
+                            font-size: 35px;
+                        }
+                        h3{
+                            margin: 20px 0px;
+                            color: var(--text-nav);
+                            font-size: 25px;
+                        }
+                        span{
+                            line-height: 1.5;
+                            color: #5D5D64;
+                        }
+                    }
+                    .box__blog__news__osiris__articel{
+                        width: 500px;
+                        .box__articel{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            width: 100%;
+                            margin-top:10%;
+                            .box__text__articel{
+                                width: 80%;
+                                a{
+                                    text-decoration: none;
+                                    color: var(--text-nav);
+                                    transition: 0.5s;
+                                }
+                                a:hover{
+                                    text-decoration: underline;
+                                }
+                                h3{
+                                    font-family: $fontFamily;
+                                    color: var(--text-nav);
+                                }
+                                span{
+                                    color: #5D5D64;
+                                    display: block;
+                                    margin: 10px 0px;
+                                    font-family: $fontFamily;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        img{
+                            width: 100px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__osiris{
+            padding: 100px 0px;
+            position: relative;
+            .container__contact__osiris{
+                max-width: 1200px;
+                margin: 0px auto;
+                .row__contact__osiris{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    .box__contact__osiris{
+                        width: 500px;
+                        font-family: $fontFamily;
+                        h1{
+                            color: var(--text-nav);
+                        }
+                        span{
+                            margin: 20px 0px;
+                            color: #5D5D64;
+                            font-size: 15px;
+                            display: inline-block;
+                        }
+                        .btn__contact{
+                            button.btn__contact{
+                                display: inline-block;
+                                padding: 10px 30px;
+                                outline: none;
+                                margin-top: 20px;
+                                border: none;
+                                font-family: $fontFamily;
+                                cursor: pointer;
+                                margin-right: 10px;
+                                background-color: var(--btn-color-banner);
+                                color: #fff;
+                            }
+                            button.btn__contact.grey{
+                                background-color: #E5E9F2;
+                                color: var(--text-nav);
+                            }
+                        }
+
+                    }
+                    .box__contact__img{
+                        width: 500px;
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        section.getstarted__osiris{
+            padding: 100px 0px;
+            position: relative;
+            background-color: var(--hero-about-osiris);
+            .container__getstarted__osiris{
+                max-width: 1200px;
+                margin: 0px auto;
+                .row__getstarted__osiris{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .box__getstarted__osiris{
+                        width: 500px;
+                        text-align: center;
+                        font-family: $fontFamily;
+                        position: relative;
+                        h1{
+                            color: var(--text-nav);
+                        }
+                        span{
+                            display: inline-block;
+                            margin: 20px 0px;
+                            color: #5D5D64;
+                        }
+                        button.getstarted{
+                            display: block;
+                            padding: 12px 30px;
+                            background-color: var(--btn-color-banner);
+                            color: #fff;
+                            outline: none;
+                            border: none;
+                            margin: 0px auto ;
+                        }
+                    }
+                    .box__svg__getstaretd{
+                        width: 300px;
+                        position: absolute;
+                        right: 50px;
+                        bottom: 0px;
+                        img{
+                            width: 100%;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            padding: 50px 10px;
+            position: relative;
+            background-color: #383638;
+            .container__footer{
+                max-width: 1200px;
+                margin: 0px auto;
+                .row__footer{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    .box__footer{
+                        font-family: $fontFamily;
+                        p{
+                            color: #fff;
+                            margin: 10px 0px;
+                        }
+                    }
+                    .box__list__footer{
+                        font-family: $fontFamily;
+                        h4{
+                            color: #fff;
+                        }
+                        ul{
+                            li{
+                                color: #5D5D64  ;
+                                list-style-type: none;
+                                margin: 10px 0px;
+                                a{
+                                    text-decoration: none;
+                                    color: #5D5D64;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes floatDown {
+    from{
+        top: -50%;
+
+    }   
+    to{
+        top: 0%;
+
+    }
+}
